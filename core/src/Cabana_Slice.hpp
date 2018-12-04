@@ -499,8 +499,6 @@ class Slice
 template<typename >
 struct is_slice : public std::false_type {};
 
-// True only if the type is a member slice *AND* the member slice is templated
-// on an AoSoA type.
 template<typename DataType,
          typename MemorySpace,
          typename MemoryAccessType,
